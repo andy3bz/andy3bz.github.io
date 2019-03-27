@@ -3,16 +3,15 @@
 	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 	<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
  	<body style='margin : 0px; overflow: hidden;'>
-		<!--    <a-assets>
-	        <a-asset-item id="earth" src="C:\Users\andy3\Documents\NetBeansProjects\Augmented-Reality\public_html\model\earth.dae"></a-asset-item>
-	    </a-assets>-->
-	    <!-- <a-scene embedded arjs> -->
-    	<!-- //untuk menyembunyikan UI -->
+		<a-assets>
+	        <a-asset-item id="earth"src=".dae"></a-asset-item>
+	    </a-assets>
 	    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 		  	<a-marker preset="kanji">
 	            <a-sphere position='0 0.1 0' material='color: black;'></a-sphere>
-	            <!--<a-entity collada-model="#earth"></a-entity>-->
-	            <!--<a-entity collada-model="url(path\to\earth.dae)"></a-entity>-->
+		  	</a-marker>
+		  	<a-marker preset="hiro">
+	            <a-box position='0 0.1 0' material='color: black;'></a-box>
 		  	</a-marker>
 		  	<a-entity camera></a-entity>
 	    </a-scene>
